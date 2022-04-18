@@ -1,0 +1,6 @@
+C:\Users\user\source\repos\SolutionSellPoint-V1.0\Layers.Framework.ADO.NET\bin\Debug\Layers.Framework.ADO.NET.dll
+C:\Users\user\source\repos\SolutionSellPoint-V1.0\Layers.Framework.ADO.NET\bin\Debug\Layers.Framework.ADO.NET.pdb
+C:\Users\user\source\repos\SolutionSellPoint-V1.0\Layers.Framework.ADO.NET\obj\Debug\Layers.Framework.ADO.NET.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\SolutionSellPoint-V1.0\Layers.Framework.ADO.NET\obj\Debug\Layers.Framework.ADO.NET.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\SolutionSellPoint-V1.0\Layers.Framework.ADO.NET\obj\Debug\Layers.Framework.ADO.NET.dll
+C:\Users\user\source\repos\SolutionSellPoint-V1.0\Layers.Framework.ADO.NET\obj\Debug\Layers.Framework.ADO.NET.pdb
