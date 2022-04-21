@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -36,7 +37,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.labelClearFields = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelExit = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -73,6 +74,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(29, 284);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 25);
@@ -82,6 +84,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(29, 212);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
@@ -91,6 +94,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(101, 54);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 71);
@@ -125,17 +129,17 @@
             this.labelClearFields.Text = "Clear Fields";
             this.labelClearFields.Click += new System.EventHandler(this.labelClearFields_Click);
             // 
-            // label3
+            // labelExit
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.label3.Location = new System.Drawing.Point(129, 409);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 18);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Exit";
-            this.label3.Click += new System.EventHandler(this.ButtonCancelar_Click);
+            this.labelExit.AutoSize = true;
+            this.labelExit.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
+            this.labelExit.Location = new System.Drawing.Point(129, 409);
+            this.labelExit.Name = "labelExit";
+            this.labelExit.Size = new System.Drawing.Size(35, 18);
+            this.labelExit.TabIndex = 5;
+            this.labelExit.Text = "Exit";
+            this.labelExit.Click += new System.EventHandler(this.ButtonCancelar_Click);
             // 
             // txtUserName
             // 
@@ -167,7 +171,7 @@
             this.ClientSize = new System.Drawing.Size(292, 447);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.txtUserName);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelExit);
             this.Controls.Add(this.labelClearFields);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
@@ -199,7 +203,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelClearFields;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelExit;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtpassword;
     }

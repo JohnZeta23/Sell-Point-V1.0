@@ -23,7 +23,7 @@ namespace WinFormsAppSellPoint_V1._0
             CargarGrupoEntidades();
         }
 
-        //FORMATO DEL CAMPO DE NUMERO DE DOCUMENTO
+        //EVENTO DE FORMATO DEL CAMPO DE NUMERO DE DOCUMENTO
 
         private void comboBoxTipoDocumento_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -32,7 +32,7 @@ namespace WinFormsAppSellPoint_V1._0
 
         }
 
-        //RELACION DE COMBOBOX TIPO ENTIDAD Y GRUPO ENTIDAD
+        //METODO PARA RELACION DE COMBOBOX TIPO ENTIDAD Y GRUPO ENTIDAD
 
         public void CargarGrupoEntidades()
         {
@@ -105,7 +105,7 @@ namespace WinFormsAppSellPoint_V1._0
 
         //Codigo del crud del formulario
 
-        //Codigo del INSERT
+        //Evento del INSERT
         private void buttonCrear_Click(object sender, EventArgs e)
         {
             if (ClassBussiness.LimiteCreditoLimite(
@@ -135,8 +135,7 @@ namespace WinFormsAppSellPoint_V1._0
             }
         }
 
-        //Codigo del UPDATE
-        
+        //Evento del UPDATE
         private void buttonActualizar_Click(object sender, EventArgs e)
         {
             if (ClassBussiness.LimiteCreditoLimite(
@@ -166,7 +165,7 @@ namespace WinFormsAppSellPoint_V1._0
             }
         }
 
-        //Codigo para traer registros a los campos y luego poder editarlos
+        //Evento para traer registros a los campos y luego poder editarlos
         private void buttonBuscarEntidad_Click(object sender, EventArgs e)
         {
             try
@@ -201,7 +200,7 @@ namespace WinFormsAppSellPoint_V1._0
                 MessageBox.Show(ex.Message);
             }
         }
-         //Codigo para el SELECT
+        //Evento para el SELECT
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
             try
@@ -232,7 +231,7 @@ namespace WinFormsAppSellPoint_V1._0
             }
         }
 
-        //Codigo del DELETE
+        //Evento del DELETE
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
             ClassData.EliminarEntidad(Convert.ToInt32(textBoxIdEntidadBuscar.Text),

@@ -17,7 +17,9 @@ namespace WinFormsAppSellPoint_V1._0
         public FormLogin()
         {
             InitializeComponent();
-        } 
+        }
+
+        //Evento para el SELECT que va a validar las credenciales del login
         private void ButtonAceptar_Click(object sender, EventArgs e) 
         {
             if(ClassData.SQLDatareader(ClassData.sqlCommand("select * from Entidades " +
@@ -41,11 +43,13 @@ namespace WinFormsAppSellPoint_V1._0
                  }             
         }
 
+        //Evento para cerrar el programa desde el menu
         private void ButtonCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        //Evento para limpiar los campos
         private void labelClearFields_Click(object sender, EventArgs e)
         {
             txtUserName.Text = "";

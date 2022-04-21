@@ -18,6 +18,9 @@ namespace WinFormsAppSellPoint_V1._0
             toolStripStatusLabelUserName.Text = Program.stringUserName.ToString();
         }
         
+
+        //Metodo para llamar formularios dentro de paneles
+
         private Form formActivado = null;
         private void AbrirFormularios(Form FormHijo)
         {
@@ -33,31 +36,44 @@ namespace WinFormsAppSellPoint_V1._0
                 FormHijo.BringToFront();
                 FormHijo.Show();
         }
+
+        //Evento para llamar el Formulario GrupoEntidades
         private void toolStripMenuItemGrupoEntidad_Click(object sender, EventArgs e)
         {
             AbrirFormularios(new Formularios_Crud.FormGrupoEntidades());
         }
 
+        //Evento para llamar el Formulario TipoEntidades
         private void toolStripMenuItemTipoEntidad_Click(object sender, EventArgs e)
         {
             AbrirFormularios(new Formularios_Crud.FormTipoEntidades());
         }
 
+        //Evento para salir del programa
         private void toolStripMenuItemSalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        //Evento para llamar el Formulario Entidades
         private void toolStripMenuItemEntidad_Click(object sender, EventArgs e)
         {
             AbrirFormularios(new FormEntidades());
         }
 
+        //Evento para llamar el Formulario Acerca De...
+        private void toolStripMenuItemAcercaDe_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios(new Formularios_Principales.FormAcercaDe());
+        }
+
+        //Evento para llamar el Formulario Login y volver a loguearse
         private void toolStripMenuItemLogin_Click(object sender, EventArgs e)
         {
             ConfirmarLogin();            
         }
 
+        //Metodo para confirmar el login nuevamente y cambiar el nombre de usuario activo
         public void ConfirmarLogin()
         {
             this.Hide();
@@ -78,6 +94,7 @@ namespace WinFormsAppSellPoint_V1._0
                 }
         }
 
+        //Evento para mostrar la fecha y hora actuales
         private void timerHoraFecha_Tick(object sender, EventArgs e)
         {
             toolStripStatusLabelDate.Text = DateTime.Now.ToLongDateString();

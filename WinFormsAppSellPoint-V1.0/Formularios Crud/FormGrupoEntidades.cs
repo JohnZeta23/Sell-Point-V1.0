@@ -21,6 +21,9 @@ namespace WinFormsAppSellPoint_V1._0.Formularios_Crud
             InitializeComponent();
         }
 
+        //Codigo del crud del formulario
+
+        //Evento del INSERT
         private void buttonCrear_Click(object sender, EventArgs e)
         {
             ClassData.RegistroGrupoEntidad(
@@ -31,6 +34,7 @@ namespace WinFormsAppSellPoint_V1._0.Formularios_Crud
             MessageBox.Show("Datos introducidos existosamente");
         }
 
+        //Evento del SELECT
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
             try
@@ -64,6 +68,7 @@ namespace WinFormsAppSellPoint_V1._0.Formularios_Crud
             }
         }
 
+        //Evento del UPDATE
         private void buttonActualizar_Click(object sender, EventArgs e)
         {
             ClassData.EditarGrupoEntidad(Convert.ToInt32(textBoxIdGrupoEntidad.Text),
@@ -73,6 +78,7 @@ namespace WinFormsAppSellPoint_V1._0.Formularios_Crud
             MessageBox.Show("Datos editados existosamente");
         }
 
+        //Evento del DELETE
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
             ClassData.EliminarGrupoEntidad(Convert.ToInt32(textBoxIdGrupoEntidadesBuscar.Text), textBoxNombreGrupoEntidadBuscar.Text.ToString());
@@ -80,6 +86,7 @@ namespace WinFormsAppSellPoint_V1._0.Formularios_Crud
             MessageBox.Show("Datos eliminados existosamente");
         }
 
+        //Evento para traer registros a los campos y luego poder editarlos
         private void buttonBuscarEntidad_Click(object sender, EventArgs e)
         {
             ClassData.LlenarGrupoEntidad(Convert.ToInt32(textBoxIdGrupoEntidad.Text));

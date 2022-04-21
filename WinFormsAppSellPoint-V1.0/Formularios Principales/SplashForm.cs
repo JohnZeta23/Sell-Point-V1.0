@@ -17,6 +17,7 @@ namespace WinFormsAppSellPoint_V1._0
             InitializeComponent();
         }
 
+        //Evento para que la progressBar aumente
         private void timerSplashForm_Tick(object sender, EventArgs e)
         {
             timerSplashForm.Enabled = true;

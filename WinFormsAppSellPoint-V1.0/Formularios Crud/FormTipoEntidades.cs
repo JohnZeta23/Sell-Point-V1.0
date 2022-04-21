@@ -20,6 +20,7 @@ namespace WinFormsAppSellPoint_V1._0.Formularios_Crud
             CargarGrupoEntidades();
         }
 
+        //Metodo para llenar el comboBox con Grupos de Entidades
         public void CargarGrupoEntidades()
         {
             try
@@ -48,6 +49,7 @@ namespace WinFormsAppSellPoint_V1._0.Formularios_Crud
             }
         }
 
+        //Evento del INSERT
         private void buttonCrear_Click(object sender, EventArgs e)
         {
             ClassData.RegistroTipoEntidad(
@@ -58,6 +60,7 @@ namespace WinFormsAppSellPoint_V1._0.Formularios_Crud
             MessageBox.Show("Datos introducidos existosamente");
         }
 
+        //Evento del SELECT
         private void buttonBuscar_Click(object sender, EventArgs e)
         {
             try
@@ -91,6 +94,7 @@ namespace WinFormsAppSellPoint_V1._0.Formularios_Crud
             }
         }
 
+        //Evento del UPDATE
         private void buttonActualizar_Click(object sender, EventArgs e)
         {
             ClassData.EditarTipoEntidad(Convert.ToInt32(textBoxIdTipoEntidad.Text),
@@ -101,6 +105,7 @@ namespace WinFormsAppSellPoint_V1._0.Formularios_Crud
             MessageBox.Show("Datos editados existosamente");
         }
 
+        //Evento del DELETE
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
             ClassData.EliminarTipoEntidad(Convert.ToInt32(textBoxIdTipoEntidadesBuscar.Text), textBoxNombreTipoEntidadBuscar.Text.ToString());
@@ -108,6 +113,7 @@ namespace WinFormsAppSellPoint_V1._0.Formularios_Crud
             MessageBox.Show("Datos eliminados existosamente");
         }
 
+        //Evento para traer registros a los campos y luego poder editarlos
         private void buttonBuscarEntidad_Click(object sender, EventArgs e)
         {
             ClassData.LlenarTipoEntidad(Convert.ToInt32(textBoxIdTipoEntidad.Text));

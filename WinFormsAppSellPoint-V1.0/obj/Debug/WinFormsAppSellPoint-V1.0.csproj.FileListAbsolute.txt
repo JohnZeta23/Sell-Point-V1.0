@@ -17,3 +17,4 @@ C:\Users\user\source\repos\SolutionSellPoint-V1.0\WinFormsAppSellPoint-V1.0\obj\
 C:\Users\user\source\repos\SolutionSellPoint-V1.0\WinFormsAppSellPoint-V1.0\obj\Debug\WinFormsAppSellPoint_V1._0.FormEntidades.resources
 C:\Users\user\source\repos\SolutionSellPoint-V1.0\WinFormsAppSellPoint-V1.0\obj\Debug\WinFormsAppSellPoint_V1._0.Formularios_Crud.FormGrupoEntidades.resources
 C:\Users\user\source\repos\SolutionSellPoint-V1.0\WinFormsAppSellPoint-V1.0\obj\Debug\WinFormsAppSellPoint_V1._0.Formularios_Crud.FormTipoEntidades.resources
+C:\Users\user\source\repos\SolutionSellPoint-V1.0\WinFormsAppSellPoint-V1.0\obj\Debug\WinFormsAppSellPoint_V1._0.Formularios_Principales.FormAcercaDe.resources

@@ -67,6 +67,12 @@
     <Compile Include="Formularios Crud\FormTipoEntidades.Designer.cs">
       <DependentUpon>FormTipoEntidades.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios Principales\FormAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios Principales\FormAcercaDe.Designer.cs">
+      <DependentUpon>FormAcercaDe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios Principales\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios Crud\FormTipoEntidades.resx">
       <DependentUpon>FormTipoEntidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios Principales\FormAcercaDe.resx">
+      <DependentUpon>FormAcercaDe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios Principales\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -127,6 +136,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Imagenes\Sell Point.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
